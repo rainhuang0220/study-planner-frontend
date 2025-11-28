@@ -48,7 +48,7 @@
                   <span>{{ plan.progress || 0 }}%</span>
                 </div>
                 <div class="progress">
-                  <div class="progress-bar" :style="{ width: (plan.progress || 0) + '%' }"></div>
+                  <div class="progress-bar bg-success" :style="{ width: (plan.progress || 0) + '%' }"></div>
                 </div>
               </div>
               <p class="card-text small">{{ truncateText(plan.goal || '暂无目标描述', 80) }}</p>

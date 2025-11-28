@@ -67,6 +67,13 @@
         </div>
       </div>
 
+      <!-- 学习进度图表 -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <StudyChart />
+        </div>
+      </div>
+
       <div class="row g-4">
         <!-- 今日任务 -->
         <div class="col-md-8">
@@ -171,6 +178,7 @@
 import { ref, onMounted, computed } from 'vue'
 import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
+import StudyChart from '../components/StudyChart.vue'
 import { useUserStore } from '../stores/user'
 import { planApi } from '../api/plan'
 import { checkinApi } from '../api/checkin'
